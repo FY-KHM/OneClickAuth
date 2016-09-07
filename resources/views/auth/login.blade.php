@@ -87,55 +87,45 @@
                                 </div>
                             </div>
                         </div>
-                        <?php
-                            $gitc = DB::table('switchref')->where('name','Github')->first();
-                            $fc= DB::table('switchref')->where('name','Facebook')->first();
-                            $gooc= DB::table('switchref')->where('name','Google')->first();
-                            $ldnc= DB::table('switchref')->where('name','Linkedin')->first();
-                            $insnc= DB::table('switchref')->where('name','Instagram')->first();
-                        ?>
                         <div class="col-md-12">
                             <!--If you need to extend till the end use btn-block in a href class-->
                             <!--If you need not extend till the end use btn-lg in a href class-->
                             <div class="row">
-                                @if ($gitc->type == 1)
+                                
                                 <div class="col-sm-4">
                                     <a class="btn btn-block btn-social btn-github" href="http://localhost:8000/github/login">
                                             <span class="fa fa-github"></span> Login with Github
                                     </a>
                                 </div>
-                                @endif
-                                @if ($fc->type == 1)
+                                
                                 <div class="col-sm-4">
                                     <a class="btn btn-block  btn-social btn-facebook" href="http://localhost:8000/facebook/login">
                                         <span class="fa fa-facebook"></span> Login with Facebook
                                     </a>
                                 </div>
-                                @endif
-                                @if ($gooc->type == 1)
+                                
                                 <div class="col-sm-4">
                                     <a class="btn btn-block  btn-social btn-google" href="http://localhost:8000/google/login">
                                         <span class="fa fa-google"></span> Login with Google
                                     </a>
                                 </div>
-                                @endif
+                                
                             </div>
                         </br>
                             <div class="row">
-                                @if ($ldnc->type == 1)
+                                
                                 <div class="col-sm-6">
                                     <a class="btn btn-block  btn-social btn-linkedin" href="http://localhost:8000/link/login">
                                         <span class="fa fa-linkedin"></span> Login with Linkedin
                                     </a>
                                 </div>
-                                @endif
-                                @if ($insnc->type == 1)
+                                
                                 <div class="col-sm-6">
                                     <a class="btn btn-block  btn-social btn-instagram" href="http://localhost:8000/insta/login">
                                         <span class="fa fa-instagram"></span> Login with Instagram
                                     </a>
                                 </div>
-                                @endif
+                               
                             </div>
                             </br>
                             <div class="form-group">
